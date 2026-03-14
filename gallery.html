@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REDROX | Full Gallery</title>
+
+    <!-- SEO & Metadata -->
+    <meta name="description"
+        content="View the full visual evidence of REDROX's high-strength interlocking blocks in various site installations and structural deployments.">
+    <link rel="icon" type="image/png" href="images/hammer-logo.png">
+
+    <!-- Preconnect & Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- External Styles -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .gallery-page {
+            background: var(--primary);
+            color: var(--secondary);
+            min-height: 100vh;
+        }
+
+        .gallery-page-header {
+            padding: 160px 24px 80px;
+            text-align: center;
+            background: linear-gradient(to bottom, rgba(255, 0, 0, 0.05) 0%, transparent 100%);
+        }
+
+        .back-home {
+            margin-bottom: 32px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--accent);
+            font-weight: 700;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            transition: 0.3s;
+        }
+
+        .back-home:hover {
+            transform: translateX(-5px);
+            color: var(--secondary);
+        }
+    </style>
+</head>
+
+<body class="gallery-page">
+
+    <!-- [1] NAVIGATION -->
+    <nav id="navbar">
+        <div class="nav-left-brand">
+            <a href="index.html">
+                <img src="images/logo-combined.png" alt="REDROX" class="nav-logo">
+            </a>
+        </div>
+
+        <div class="nav-center">
+            <a href="index.html#problem">The Problem</a>
+            <a href="index.html#tech">Technology</a>
+            <a href="index.html#features">Capabilities</a>
+            <a href="gallery.html" class="active">Gallery</a>
+            <a href="index.html#team">Our Team</a>
+            <a href="index.html#testimonials">Testimonials</a>
+            <a href="index.html#faq">FAQ</a>
+        </div>
+
+        <div class="nav-right">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+                <svg class="sun-icon" viewBox="0 0 24 24">
+                    <path
+                        d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58a.996.996 0 00-1.41 0 .996.996 0 000 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37a.996.996 0 00-1.41 0 .996.996 0 000 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41l-1.06-1.06zm1.06-12.37a.996.996 0 00-1.41 0l-1.06 1.06a.996.996 0 000 1.41c.39.39 1.03.39 1.41 0l1.06-1.06a.996.996 0 000-1.41zM7.05 18.36a.996.996 0 00-1.41 0l-1.06 1.06a.996.996 0 000 1.41c.39.39 1.03.39 1.41 0l1.06-1.06a.996.996 0 000-1.41z" />
+                </svg>
+                <svg class="moon-icon" viewBox="0 0 24 24">
+                    <path
+                        d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z" />
+                </svg>
+            </button>
+            <a href="index.html#contact" class="btn-primary" style="padding: 10px 24px;">Partner With Us</a>
+            <button class="hamburger" id="menuToggle" aria-label="Toggle Navigation Menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 12h18M3 6h18M3 18h18" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html#problem">The Shift</a>
+        <a href="index.html#tech">Technology</a>
+        <a href="index.html#features">Capabilities</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="index.html#team">Our Team</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="index.html#contact" class="btn-primary" style="text-align: center;">Procure Now</a>
+    </div>
+
+    <header class="gallery-page-header bg-lava">
+        <div class="container" style="max-width: 900px; position: relative; z-index: 2;">
+            <a href="index.html" class="back-home">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M19 12H5M12 19l-7-7 7-7" />
+                </svg>
+                Return Home
+            </a>
+            <h1 data-aos="fade-up" style="font-size: 64px;">Proven in the <span class="text-red">Field.</span></h1>
+            <p class="subtext-centered" data-aos="fade-up" data-aos-delay="100" style="color: #fff; opacity: 0.9;">
+                Witness the structural integrity and rapid deployment of REDROX blocks across various pilot sites and
+                testing environments.
+            </p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="bento-grid">
+            <!-- Row 1 -->
+            <div class="bento-cell bento-2x2" data-aos="fade-up">
+                <video autoplay muted loop playsinline>
+                    <source src="videos/12.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="bento-cell bento-2x1" data-aos="fade-up" data-aos-delay="100">
+                <video autoplay muted loop playsinline>
+                    <source src="videos/11.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="bento-cell bento-1x1" data-aos="fade-up" data-aos-delay="200">
+                <img src="images/1.jpeg" alt="Field Installation 1">
+            </div>
+            <div class="bento-cell bento-1x1" data-aos="fade-up" data-aos-delay="300">
+                <img src="images/2.jpeg" alt="Material Texture">
+            </div>
+
+            <!-- Row 2 -->
+            <div class="bento-cell bento-1x1" data-aos="fade-up">
+                <video autoplay muted loop playsinline>
+                    <source src="videos/15.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="bento-cell bento-1x1" data-aos="fade-up" data-aos-delay="100">
+                <video autoplay muted loop playsinline>
+                    <source src="videos/9.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="bento-cell bento-2x1" data-aos="fade-up" data-aos-delay="200">
+                <video autoplay muted loop playsinline>
+                    <source src="videos/13.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="bento-cell bento-2x2" data-aos="fade-up">
+                <img src="images/4.jpeg" alt="Structural Integrity">
+            </div>
+            <div class="bento-cell bento-1x1" data-aos="fade-up" data-aos-delay="100">
+                <video autoplay muted loop playsinline>
+                    <source src="videos/2.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="bento-cell bento-1x1" data-aos="fade-up" data-aos-delay="200">
+                <video autoplay muted loop playsinline>
+                    <source src="videos/10.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="bento-cell bento-2x1" data-aos="fade-up" data-aos-delay="300">
+                <video autoplay muted loop playsinline>
+                    <source src="videos/14.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <!-- Row 5 -->
+            <div class="bento-cell bento-1x1" data-aos="fade-up">
+                <img src="images/3.jpeg" alt="Block Close-up">
+            </div>
+            <div class="bento-cell bento-1x1" data-aos="fade-up" data-aos-delay="100">
+                <img src="images/5.jpeg" alt="Batch Production">
+            </div>
+            <div class="bento-cell bento-2x1" data-aos="fade-up" data-aos-delay="200">
+                <video autoplay muted loop playsinline>
+                    <source src="videos/1.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="images/logo-combined.png" alt="REDROX Logo" class="footer-logo" loading="lazy">
+                    <p>We generate predictable revenue through bulk project contracts and long-term supply agreements.
+                        Supplying real estate developers, contractors, affordable housing projects, and government
+                        infrastructure.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html#problem">The Problem</a></li>
+                        <li><a href="index.html#tech">Technology</a></li>
+                        <li><a href="index.html#features">Capabilities</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="index.html#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Regional</h4>
+                    <ul>
+                        <li><a href="#">Supply Chain</a></li>
+                        <li><span style="color: var(--text-muted); font-size: 14px;">Tamil Nadu, India</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; 2026 REDROX Industries Pvt Ltd. All Rights Reserved.
+                </div>
+                <div class="footer-socials">
+                    <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                    <a href="#" aria-label="X">X</a>
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCROLL TO TOP -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll back to top">
+        <svg fill="currentColor" width="20" height="20" viewBox="0 0 24 24">
+            <path d="M12 4l-8 8h6v8h4v-8h6z" />
+        </svg>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

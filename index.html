@@ -1,0 +1,645 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REDROX | Strong Foundations of Trust</title>
+
+    <!-- SEO & Metadata -->
+    <meta name="description"
+        content="REDROX Industries provides high-strength interlocking construction blocks that slash build times from 2 years to 6 months. Eco-friendly, seismic-resistant, and thermally insulated.">
+    <meta name="keywords"
+        content="REDROX, interlocking blocks, sustainable construction, fast build, seismic resistant, thermal insulation, B2B construction">
+    <link rel="icon" type="image/png" href="images/hammer-logo.png">
+    <link rel="apple-touch-icon" href="images/favicon.png">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="REDROX | Strong Foundations of Trust">
+    <meta property="og:description"
+        content="Next-generation interlocking blocks slashing construction time and costs without compromising strength.">
+    <meta property="og:image" content="images/logo.png">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="REDROX Industries | Innovation in Masonry">
+    <meta name="twitter:description"
+        content="Sustainable, high-performance construction materials for modern infrastructure.">
+
+    <!-- Preconnect & Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- External Styles -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- DEV TIP: Most text elements have 'contenteditable' enabled. You can edit them directly in the browser! -->
+</head>
+
+<body>
+
+    <!-- Dynamic Background Elements -->
+    <canvas id="bgCanvas" aria-hidden="true"></canvas>
+    <div id="spotlight" aria-hidden="true"></div>
+
+    <!-- [1] NAVIGATION -->
+    <nav id="navbar">
+        <div class="nav-left-brand">
+            <a href="#hero">
+                <img src="images/logo-combined.png" alt="REDROX" class="nav-logo">
+            </a>
+        </div>
+
+        <div class="nav-center">
+            <a href="#problem">The Problem</a>
+            <a href="#tech">Technology</a>
+            <a href="#features">Capabilities</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="#team">Our Team</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#faq">FAQ</a>
+        </div>
+
+        <div class="nav-right">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+                <svg class="sun-icon" viewBox="0 0 24 24">
+                    <path
+                        d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58a.996.996 0 00-1.41 0 .996.996 0 000 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37a.996.996 0 00-1.41 0 .996.996 0 000 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41l-1.06-1.06zm1.06-12.37a.996.996 0 00-1.41 0l-1.06 1.06a.996.996 0 000 1.41c.39.39 1.03.39 1.41 0l1.06-1.06a.996.996 0 000-1.41zM7.05 18.36a.996.996 0 00-1.41 0l-1.06 1.06a.996.996 0 000 1.41c.39.39 1.03.39 1.41 0l1.06-1.06a.996.996 0 000-1.41z" />
+                </svg>
+                <svg class="moon-icon" viewBox="0 0 24 24">
+                    <path
+                        d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z" />
+                </svg>
+            </button>
+            <a href="#contact" class="btn-primary" style="padding: 10px 24px;">Partner With Us</a>
+            <button class="hamburger" id="menuToggle" aria-label="Toggle Navigation Menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 12h18M3 6h18M3 18h18" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#problem">The Shift</a>
+        <a href="#tech">Technology</a>
+        <a href="#features">Capabilities</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="#team">Our Team</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact" class="btn-primary" style="text-align: center;">Procure Now</a>
+    </div>
+
+    <!-- [2] HERO SECTION -->
+    <header class="hero bg-lava" id="hero">
+        <div class="hero-content">
+            <h1 data-aos="fade-up" data-aos-duration="1000">
+                Strong Foundations of <br><span class="text-red italic">Trust</span>
+            </h1>
+            <p class="subtext" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                An eco-friendly, low-resource construction system featuring high-strength interlocking blocks.
+            </p>
+            <div class="cta-row" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                <a href="#contact" class="btn-primary btn-large">Secure Bulk Supply</a>
+                <a href="#tech" class="btn-secondary btn-large">Watch Architecture &#x25B6;</a>
+            </div>
+            <div class="scroll-indicator-wrap" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                <div class="scroll-indicator" aria-hidden="true"></div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- [4] THE SHIFT (Problem/Solution) -->
+    <section class="section problem" id="problem">
+        <div class="container grid-center">
+            <article class="problem-text" data-aos="fade-up">
+                <div class="section-label text-red">THE PROBLEM</div>
+                <h2>The Construction Industry is Broken <span class="text-red">We Fixed It.</span></h2>
+                <p>
+                    100M+ tons of textile waste. 2-year build cycles. Cracking cement blocks. The old way of building is
+                    over — REDROX replaces it with something 4–5× stronger, built in a fraction of the time.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <!-- [5] BACKGROUND NARRATIVE VIDEO -->
+    <section class="video-hero-container" id="tech">
+        <div class="video-fixed-bg">
+            <video id="loopVideo" muted playsinline autoplay>
+                <source src="videos/1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-scrim"></div>
+        </div>
+
+        <div class="narrative-content">
+            <div class="content-block" data-aos="fade-up">
+                <span class="label-red">INNOVATIVE PRODUCTION</span>
+                <h2>Converting a global pollution problem into a scalable construction resource.</h2>
+                <p>Utilizing 100M+ tons of annual textile waste to build the future.</p>
+            </div>
+
+            <div class="content-block" data-aos="fade-up">
+                <span class="label-red">BEYOND STRENGTH</span>
+                <h2>Structural integrity that is 4–5× greater than conventional bricks.</h2>
+                <p>Designed for rapid deployment and seismic reliability.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- [6] CORE METRICS -->
+    <section class="section stats" id="stats">
+        <div class="container container-md text-center">
+            <h2 data-aos="fade-up">CORE METRICS</h2>
+            <div class="stats-grid">
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-number">110 TONS</div>
+                    <div class="stat-text">Hydraulic compression for maximum density, ensuring zero water leakage and no
+                        gaps.</div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-number">4–5&times;</div>
+                    <div class="stat-text">Greater load-bearing capacity and strength than conventional clay bricks.
+                    </div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-number">70%</div>
+                    <div class="stat-text">Reduction in water consumption and significant savings in cement usage per
+                        build.</div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-number">10&deg;C</div>
+                    <div class="stat-text">Cooler indoor temperatures, drastically lowering AC and electricity
+                        consumption.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- [7] STICKY FEATURE SHOWCASE -->
+    <section class="section features-sticky" id="features">
+        <div class="container text-center mb-48">
+            <div class="section-label text-red">CAPABILITIES</div>
+            <h2 data-aos="fade-up">Architected for Longevity.</h2>
+        </div>
+
+        <div class="sticky-container">
+            <div class="sticky-cards" id="stickyCards">
+                <article class="sticky-card">
+                    <div class="card-inner">
+                        <div class="card-icon" aria-hidden="true">
+                            <svg viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="var(--accent)"
+                                stroke-width="2.5">
+                                <rect x="6" y="24" width="36" height="16" rx="2"></rect>
+                                <rect x="12" y="8" width="24" height="16" rx="2"></rect>
+                                <path d="M20 24v-4m8 4v-4"></path>
+                            </svg>
+                        </div>
+                        <h3>Interlocking Dry-Stack System</h3>
+                        <p>Accurate alignment with minimal plastering.
+                            Reduces dependency on skilled labor and leads to greater efficiency.</p>
+                    </div>
+                </article>
+                <article class="sticky-card">
+                    <div class="card-inner">
+                        <div class="card-icon" aria-hidden="true">
+                            <svg viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="var(--accent)"
+                                stroke-width="2.5">
+                                <rect x="6" y="6" width="36" height="36" rx="4"></rect>
+                                <path d="M16 6v36M32 6v36M6 24h36M16 16h16M16 32h16"></path>
+                            </svg>
+                        </div>
+                        <h3>Built-in Electrical & Plumbing</h3>
+                        <p>Features built-in channels meaning absolutely no wall cutting or rework is required.</p>
+                    </div>
+                </article>
+                <article class="sticky-card">
+                    <div class="card-inner">
+                        <div class="card-icon" aria-hidden="true">
+                            <svg viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="var(--accent)"
+                                stroke-width="2.5">
+                                <path d="M24 4C14 4 6 12 6 22c0 14 18 22 18 22s18-8 18-22c0-10-8-18-18-18z"></path>
+                                <path d="M24 44V16m-8 12l8-6m8 10l-8-6"></path>
+                            </svg>
+                        </div>
+                        <h3>FiIntegrated Crack Resistance</h3>
+                        <p>Shredded cloth fibers act as micro-reinforcement within the 110-ton compressed matrix,
+                            absorbing tensile stress and providing elite-level crack resistance for the lifetime of the
+                            building.</p>
+                    </div>
+                </article>
+                <article class="sticky-card">
+                    <div class="card-inner">
+                        <div class="card-icon" aria-hidden="true">
+                            <svg viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="var(--accent)"
+                                stroke-width="2.5">
+                                <path d="M12 24c0-6 10-12 10-12v24S12 30 12 24z"></path>
+                                <path d="M28 16c4 4 4 12 0 16M34 10c8 8 8 20 0 28"></path>
+                            </svg>
+                        </div>
+                        <h3>Acoustic Insulation</h3>
+                        <p>Actively absorbs sound, leading to reduced noise, echo, and vibration noise.</p>
+                    </div>
+                </article>
+                <article class="sticky-card">
+                    <div class="card-inner">
+                        <div class="card-icon" aria-hidden="true">
+                            <svg viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="var(--accent)"
+                                stroke-width="2.5">
+                                <path d="M24 38a6 6 0 100-12 6 6 0 000 12z"></path>
+                                <path d="M24 10v16"></path>
+                                <path d="M34 16v14a10 10 0 01-20 0V16a10 10 0 0120 0z"></path>
+                            </svg>
+                        </div>
+                        <h3>Thermal Insulation</h3>
+                        <p>Traps air to reduce heat transfer, delivering thermal comfort.</p>
+                    </div>
+                </article>
+                <article class="sticky-card">
+                    <div class="card-inner">
+                        <div class="card-icon" aria-hidden="true">
+                            <svg viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="var(--accent)"
+                                stroke-width="2.5">
+                                <path d="M24 4L8 12v16l16 16 16-16V12L24 4z"></path>
+                                <path d="M8 12l16 12 16-12"></path>
+                                <path d="M24 24v20"></path>
+                            </svg>
+                        </div>
+                        <h3>Earthquake Resistance</h3>
+                        <p>Ensures durability and reliability in various construction applications, especially in
+                            seismic zones.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- [8] SITE INSTALLATIONS GALLERY -->
+    <section class="section gallery" id="evidence">
+        <div class="container text-center">
+            <div class="section-label text-red">PROJECT EVIDENCE</div>
+            <h2 data-aos="fade-up">Proven in the Field.</h2>
+            <p class="subtext-centered mb-48">High-resolution proof of our pilot site successes
+                and structural deployments.</p>
+
+            <div class="bento-grid">
+                <!-- Row 1 & 2 Left: Main Image (2x2) -->
+                <div class="bento-cell bento-2x2" data-aos="fade-up" data-aos-delay="100">
+                    <img src="images/1.jpeg" alt="REDROX Site Installation" loading="lazy">
+                </div>
+
+                <!-- Row 1 Right: Video 7 (2x1) -->
+                <div class="bento-cell bento-2x1" data-aos="fade-up" data-aos-delay="200">
+                    <video autoplay muted loop playsinline>
+                        <source src="videos/12.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <!-- Row 2 Middle: Image 2 (1x1) -->
+                <div class="bento-cell bento-1x1" data-aos="fade-up" data-aos-delay="300">
+                    <img src="images/2.jpeg" alt="Material Texture" loading="lazy">
+                </div>
+
+                <!-- Row 2 Right: Video 6 (1x1) -->
+                <div class="bento-cell bento-1x1" data-aos="fade-up" data-aos-delay="400">
+                    <video autoplay muted loop playsinline>
+                        <source src="videos/14.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+            </div>
+
+            <div class="text-center mt-48" data-aos="fade-up">
+                <a href="gallery.html" class="btn-secondary btn-large">Explore Full Gallery</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- [9] TEAM SLIDER - STACKED DESIGN -->
+    <section class="team-slider-section" id="team">
+        <div class="container text-center mb-48">
+            <div class="section-label text-red">OUR TEAM</div>
+            <h3 data-aos="fade-up">A dynamic team of young innovators blending engineering expertise with fresh
+                perspectives to shape a stronger future.</h3>
+        </div>
+        <div class="team-slider-container">
+            <!-- Left: Image Stack -->
+            <div class="team-image-stack" data-aos="fade-right">
+                <div class="team-card-image active" data-index="0">
+                    <img src="images/team-1.png" alt="S.A.Kanith Kumar">
+                </div>
+                <div class="team-card-image back-1" data-index="1">
+                    <img src="images/team-3.png" alt="S.Adhith">
+                </div>
+                <div class="team-card-image back-2" data-index="2">
+                    <img src="images/team-2.png" alt="S.Ragavi">
+                </div>
+                <div class="team-card-image" data-index="3">
+                    <img src="images/team-4.png" alt="M.Kiruthivasan">
+                </div>
+                <div class="team-card-image" data-index="4">
+                    <img src="images/team-5.png" alt="M.S. Anushri">
+                </div>
+                <div class="team-card-image" data-index="5">
+                    <img src="images/team-6.png" alt="Varsha Prabhakaran">
+                </div>
+            </div>
+
+            <!-- Right: Content area -->
+            <div class="team-content-area" data-aos="fade-left">
+                <div class="team-slide-content active" data-index="0">
+                    <h3>S.A Kanith Kumar</h3>
+                    <div class="role">Founder & CEO</div>
+                    <p class="bio">
+                        Founded REDROX at the age of 18 with a vision to turn innovative ideas into real-world
+                        solutions.Currently pursuing Civil Engineering at Sathyabama Institute of Science and
+                        Technology. He is driven by curiosity and determination to build impactful solutions and grow
+                        REDROX into a global leader.
+                    </p>
+                </div>
+                <div class="team-slide-content" data-index="1">
+                    <h3>S.Ragavi</h3>
+                    <div class="role">Co-Founder & Chief Communications Officer</div>
+                    <p class="bio">
+                        Raghavi plays a vital role in supporting the company’s communication strategy and creative
+                        direction.
+                        She brings fresh ideas and innovative thinking that help shape the company’s unique voice and
+                        future.
+                    </p>
+                </div>
+                <div class="team-slide-content" data-index="2">
+                    <h3>S.Adhith</h3>
+                    <div class="role"> Chief Operating Officer</div>
+                    <p class="bio">
+                        Aged 19, Adhith is a key member of the leadership team.
+
+                        Manages day-to-day operations and ensures the smooth execution of the company’s vision.
+                        He focuses on turning bold ideas into action to drive company growth.
+                    </p>
+                </div>
+                <div class="team-slide-content" data-index="3">
+                    <h3>M.Kiruthivasan</h3>
+                    <div class="role">Chief Financial Officer</div>
+                    <p class="bio">
+                        Currently pursuing an MBA.
+
+                        Responsible for overseeing financial planning and strategy. He ensures financial stability while
+                        supporting long-term development and growth.
+                    </p>
+                </div>
+                <div class="team-slide-content" data-index="4">
+                    <h3>M. S. Anushri</h3>
+                    <div class="role">Chief Marketing Officer</div>
+                    <p class="bio">
+                        Pursuing Biomedical Engineering at Sathyabama Institute of Science and Technology.
+
+                        Leads marketing efforts and brand building. With strong communication skills, she connects
+                        REDROX with global audiences to promote the company’s vision.
+                    </p>
+                </div>
+                <div class="team-slide-content" data-index="5">
+                    <h3>Varsha Prabhakaran</h3>
+                    <div class="role">Business Development Executive</div>
+                    <p class="bio">
+                        Pursuing her first year at Manipal University.
+
+                        Focuses on identifying new business opportunities and building partnerships. She also assists
+                        the team with legal and documentation-related work to ensure smooth operations.
+                    </p>
+                </div>
+
+                <!-- Navigation -->
+                <div class="team-nav">
+                    <button class="nav-btn" id="teamPrev" aria-label="Previous Team Member">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 12H5m0 0l7 7m-7-7l7-7" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <button class="nav-btn" id="teamNext" aria-label="Next Team Member">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M5 12h14m0 0l-7-7m7 7l-7 7" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- [9.5] TESTIMONIALS SECTION -->
+    <section class="section testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-label text-red text-center">TESTIMONIALS</div>
+            <h2 class="text-center" data-aos="fade-up">Trusted by Industry Leaders</h2>
+            <div class="testimonials-grid mt-48">
+                <!-- Testimonial 1 -->
+                <div class="testi-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testi-quote">“</div>
+                    <p class="testi-text">REDROX has completely transformed our construction timeline. The interlocking
+                        system is not only faster but significantly stronger than traditional bricks.</p>
+                    <div class="testi-author">
+                        <img src="images/testimonial-1.png" alt="Amit Sharma">
+                        <div class="author-info">
+                            <div class="author-name">Amit Sharma</div>
+                            <div class="author-role">Project Manager, BuildCorp</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="testi-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testi-quote">“</div>
+                    <p class="testi-text">The thermal insulation properties are a game-changer. Our clients are
+                        extremely happy with the natural cooling effect in their new homes.</p>
+                    <div class="testi-author">
+                        <img src="images/testimonial-2.png" alt="Sneha Kapoor">
+                        <div class="author-info">
+                            <div class="author-name">Sneha Kapoor</div>
+                            <div class="author-role">Chief Architect, GreenSpaces</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 3 (Extra) -->
+                <div class="testi-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testi-quote">“</div>
+                    <p class="testi-text">Integrating REDROX into our large-scale infrastructure projects was seamless.
+                        Their team's technical support and product reliability are unmatched.</p>
+                    <div class="testi-author">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop"
+                            alt="Vikram Singh">
+                        <div class="author-info">
+                            <div class="author-name">Vikram Singh</div>
+                            <div class="author-role">Director, Metro Infra</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- [10] TECHNICAL FAQ -->
+    <section class="section faq" id="faq">
+        <div class="container container-sm text-center">
+            <h2 data-aos="fade-up">Frequently asked questions</h2>
+            <p class="faq-subtitle" data-aos="fade-up" data-aos-delay="100">
+                Optimized for high-performance building systems. If you don't find what you need here, reach us at <a
+                    href="mailto:redroxindustriespvtltd@gmail.com">redroxindustriespvtltd@gmail.com</a>
+            </p>
+
+            <div class="faq-list mt-48">
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                    <button class="faq-btn">
+                        <span class="faq-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </span>
+                        <span>How do the cloth fibers enhance thermal performance?</span>
+                    </button>
+                    <div class="faq-panel">
+                        <div class="faq-panel-inner">
+                            Embedded textile fibers introduce micro-air pockets within the masonry matrix. This creates
+                            a thermal break, significantly lowering the U-value and reducing indoor temperatures by up
+                            to 10°C compared to traditional clay bricks.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <button class="faq-btn">
+                        <span class="faq-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </span>
+                        <span>Does fiber reinforcement stabilize curing shrinkage?</span>
+                    </button>
+                    <div class="faq-panel">
+                        <div class="faq-panel-inner">
+                            Yes. During the cementitious curing process, fibers act as a multi-directional mesh. They
+                            absorb internal tensile stresses and bridge micro-cracks before they can propagate to the
+                            block's surface, ensuring long-term aesthetic and structural integrity.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                    <button class="faq-btn">
+                        <span class="faq-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </span>
+                        <span>What are the verified load-bearing certifications?</span>
+                    </button>
+                    <div class="faq-panel">
+                        <div class="faq-panel-inner">
+                            REDROX blocks are laboratory-tested to perform 4–5× better than standard masonry. They
+                            comfortably exceed IS 2185 standards, making them suitable for multi-story load-bearing
+                            applications without additional frame support.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- [11] B2B PROCUREMENT / CONTACT -->
+    <section class="section contact" id="contact">
+        <div class="container container-sm text-center">
+            <div class="section-label tracking-widest text-muted">PARTNER WITH REDROX</div>
+            <h2 data-aos="fade-up">Contact us</h2>
+            <p class="subtext-centered mb-48" data-aos="fade-up" data-aos-delay="100">
+            </p>
+
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form" data-aos="fade-up"
+                data-aos-delay="200">
+                <div class="form-row grid-2-gap16">
+                    <div class="form-group">
+                        <label for="company">Company / Organization</label>
+                        <input type="text" id="company" name="company" required placeholder="Enter company name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="email@company.com">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="volume">Project Scope</label>
+                        <input type="text" id="volume" name="volume" placeholder="e.g. 50,000 blocks">
+                    </div>
+                </div>
+                <div class="form-row text-center-desktop">
+                    <button type="submit" class="btn-primary w-full-mobile" style="padding:16px 48px;">Request
+                        Partnership Terms</button>
+                </div>
+            </form>
+
+            <div class="contact-info mt-48 text-muted-white" data-aos="fade-in" data-aos-delay="400">
+                <a href="mailto:hello@redrox.in" class="text-red">redroxindustriespvtltd@gmail.com</a><br>
+                Tamil Nadu, India
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand" data-aos="fade-right">
+                    <img src="images/logo-combined.png" alt="REDROX Logo" class="footer-logo" loading="lazy">
+                    <p>We generate predictable revenue through bulk project contracts and long-term supply agreements.
+                        Supplying real estate developers, contractors, affordable housing projects, and government
+                        infrastructure.</p>
+                </div>
+                <div class="footer-links" data-aos="fade-up" data-aos-delay="100">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#problem">The Problem</a></li>
+                        <li><a href="#tech">Technology</a></li>
+                        <li><a href="#features">Capabilities</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links" data-aos="fade-up" data-aos-delay="200">
+                    <h4>Regional</h4>
+                    <ul>
+                        <li><a href="#">Supply Chain</a></li>
+                        <li><span style="color: var(--text-muted); font-size: 14px;">Tamil Nadu, India</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; 2026 REDROX Industries Pvt Ltd. All Rights Reserved.
+                </div>
+                <div class="footer-socials">
+                    <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                    <a href="#" aria-label="X">X</a>
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCROLL TO TOP UTILITY -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll back to top">
+        <svg fill="currentColor" width="20" height="20" viewBox="0 0 24 24">
+            <path d="M12 4l-8 8h6v8h4v-8h6z" />
+        </svg>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
