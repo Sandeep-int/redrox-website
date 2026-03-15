@@ -224,41 +224,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, { passive: true });
 
-    /* TEAM SLIDER LOGIC */
-    const teamImages = document.querySelectorAll('.team-card-image');
-    const teamContents = document.querySelectorAll('.team-slide-content');
-    const prevBtn = document.getElementById('teamPrev');
-    const nextBtn = document.getElementById('teamNext');
-    let teamIndex = 0;
-
-    function updateTeamSlider(index) {
-        // Update index range
-        if (index < 0) teamIndex = teamImages.length - 1;
-        else if (index >= teamImages.length) teamIndex = 0;
-        else teamIndex = index;
-
-        // Update Images Stack
-        teamImages.forEach((img, i) => {
-            img.className = 'team-card-image'; // reset
-            if (i === teamIndex) {
-                img.classList.add('active');
-            } else if (i === (teamIndex + 1) % teamImages.length) {
-                img.classList.add('back-1');
-            } else if (i === (teamIndex + 2) % teamImages.length) {
-                img.classList.add('back-2');
-            }
-        });
-
-        // Update Content
-        teamContents.forEach((content, i) => {
-            content.classList.remove('active');
-            if (i === teamIndex) content.classList.add('active');
-        });
-    }
-
-    if (prevBtn && nextBtn) {
-        prevBtn.addEventListener('click', () => updateTeamSlider(teamIndex - 1));
-        nextBtn.addEventListener('click', () => updateTeamSlider(teamIndex + 1));
-    }
-
 });
