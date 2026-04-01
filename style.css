@@ -419,6 +419,79 @@ nav.hidden { transform:translate(-50%, -150%); opacity:0; }
 /* FAQ - MODERN REDESIGN */
 .faq { background: var(--primary) !important; color: var(--secondary); padding: 120px 0; transition: background-color 0.3s; }
 
+/* ACCREDITATION & TESTING SECTION - ADDED */
+.accreditation { 
+    background: var(--primary); 
+    padding: 140px 0; 
+    border-top: 1px solid var(--border); 
+    overflow: hidden; 
+    position: relative;
+    /* Dotted Pattern from reference */
+    background-image: radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size: 32px 32px;
+}
+[data-theme="light"] .accreditation {
+    background-image: radial-gradient(rgba(0,0,0,0.05) 1px, transparent 1px);
+}
+.accreditation-centered { 
+    max-width: 800px; 
+    margin: 0 auto; 
+    text-align: center; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+.h-accreditation { font-size: 64px; margin-bottom: 24px; color: var(--secondary); letter-spacing: -0.03em; }
+.accreditation-desc { font-size: 18px; color: var(--text-muted); line-height: 1.7; margin-bottom: 40px; max-width: 600px; }
+
+.accreditation-meta { display: flex; justify-content: center; gap: 48px; margin-bottom: 48px; width: 100%; }
+.meta-label { display: block; font-size: 11px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 8px; }
+.meta-value { display: block; font-size: 16px; font-weight: 600; color: var(--secondary); }
+
+.accreditation-btns { display: flex; justify-content: center; gap: 16px; margin-bottom: 56px; width: 100%; }
+
+.ledger-box { 
+    display: flex; 
+    gap: 20px; 
+    background: var(--ui-30); 
+    border: 1px solid var(--border); 
+    padding: 24px; 
+    border-radius: 20px; 
+    max-width: 500px;
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+}
+.ledger-box::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 4px; height: 100%;
+    background: var(--accent);
+}
+.ledger-icon { 
+    width: 48px; height: 48px; 
+    background: rgba(211, 47, 47, 0.1); 
+    border-radius: 12px; 
+    display: flex; align-items: center; justify-content: center; 
+    flex-shrink: 0; 
+}
+.ledger-icon svg { width: 24px; height: 24px; }
+.ledger-text strong { display: block; font-size: 15px; color: var(--secondary); margin-bottom: 4px; }
+.ledger-text p { font-size: 13px; color: var(--text-muted); margin: 0; line-height: 1.5; }
+
+/* Cert Preview Styling */
+.accreditation-preview { position: relative; }
+@media (max-width: 1024px) {
+    .h-accreditation { font-size: 48px; }
+}
+
+@media (max-width: 900px) {
+    .accreditation-centered { padding: 0 24px; }
+    .accreditation-meta { flex-direction: column; gap: 24px; align-items: center; }
+    .accreditation-btns { flex-direction: column; width: 100%; }
+    .accreditation-btns a { width: 100%; }
+}
+
 /* TESTIMONIALS SECTION - ADDED */
 .testimonials { background: var(--bg-60); padding: 120px 0; }
 .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin-top: 64px; }
